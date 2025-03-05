@@ -1,0 +1,182 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #cf985c, #dfa579);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.profile-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    width: 40%;
+    height: 70%;
+}
+.profile-left {
+    
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f1f1f1;
+}
+
+h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.un{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    
+}
+
+.deux{ 
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.btn-follow {
+    background: transparent;
+    color: black;
+    padding: 5px 50px;
+    border-radius: 12px;
+    border: 2px solid black;
+  
+}
+
+.btn-message {
+    background: transparent;
+    color: black;
+    padding: 5px 40px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.btn-message:hover{
+    background-color: rgb(251, 154, 154);
+}
+.btn-follow:hover{
+    background-color: rgb(251, 154, 154);
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 40%;
+    gap: 2px;
+}
+ .stats {
+    height:33%;
+    width: 100%;
+    background-color: #e8b065;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0s;   
+}
+   .stats:hover{
+    background-color:#cf985c;
+}
+ .number 
+ {
+    height: 33%;
+    width: 100%;
+    background-color: #e8b065;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0s;
+
+}
+
+ .number:hover{
+    background-color:#cf985c;
+  
+}
+
+.label {
+  font-size: 12px;
+  color: gray;
+  height: 33%;
+  width: 100%;
+  background-color: #e8b065;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0s;
+}
+
+ .label:hover
+ {
+    background-color:#cf985c;
+ }
+ .names
+ {
+       font-weight: bold;
+      font-size: 25px;
+ }
+.cercle{
+    position: relative;
+}
+.cercle-1, .cercle-2 {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s ease-in-out;
+}
+
+.cercle-1 {
+    border-color: #1307fa #0c1bec #6630db transparent;
+}
+
+.cercle-2 {
+    border-color: #a81ea6 transparent #b01e9c #ad2a86;
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+}
+
+.cercle:hover .cercle-1 {
+    transform: rotate(360deg);
+}
+
+.cercle:hover .cercle-2 {
+    transform: rotate(-360deg);
+}
